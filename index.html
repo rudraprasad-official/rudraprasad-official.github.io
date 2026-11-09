@@ -176,6 +176,42 @@ footer {
   nav { justify-content: center; }
   .logo { width: 100%; text-align: center; }
 }
+
+/* Responsive gallery */
+section[id] { scroll-margin-top: 95px; }
+.gallery-intro { color: var(--muted); margin-top: -10px; }
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 28px;
+}
+.photo-gallery a {
+  display: block;
+  overflow: hidden;
+  border-radius: 14px;
+  border: 1px solid #30445a;
+  background: var(--card);
+}
+.photo-gallery img {
+  display: block;
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  transition: transform .3s ease;
+}
+.photo-gallery a:hover img { transform: scale(1.04); }
+.photo-gallery a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 3px;
+}
+@media (max-width: 600px) {
+  .photo-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .photo-gallery img { height: 230px; }
+}
 </style>
 
 <script type="application/ld+json">
@@ -220,6 +256,7 @@ footer {
     <a href="#films">Films</a>
     <a href="#social">Social Work</a>
     <a href="#achievements">Achievements</a>
+    <a href="#gallery">Gallery</a>
   </div>
 </nav>
 
@@ -582,6 +619,31 @@ footer {
   </div>
 </section>
 
+<section id="gallery" aria-labelledby="gallery-heading">
+  <h2 id="gallery-heading">Photo Gallery</h2>
+  <p class="gallery-intro">A collection of personal and professional moments.</p>
+  <div class="photo-gallery">
+    <a href="photo1.jpg" target="_blank" rel="noopener" aria-label="View photo 1 full size">
+      <img src="photo1.jpg" alt="Rudra Prasad portrait 1" loading="lazy">
+    </a>
+    <a href="photo2.png" target="_blank" rel="noopener" aria-label="View photo 2 full size">
+      <img src="photo2.png" alt="Rudra Prasad portrait 2" loading="lazy">
+    </a>
+    <a href="photo3.png" target="_blank" rel="noopener" aria-label="View photo 3 full size">
+      <img src="photo3.png" alt="Rudra Prasad portrait 3" loading="lazy">
+    </a>
+    <a href="photo4.png" target="_blank" rel="noopener" aria-label="View photo 4 full size">
+      <img src="photo4.png" alt="Rudra Prasad portrait 4" loading="lazy">
+    </a>
+    <a href="photo5.png" target="_blank" rel="noopener" aria-label="View photo 5 full size">
+      <img src="photo5.png" alt="Rudra Prasad portrait 5" loading="lazy">
+    </a>
+    <a href="photo6.png" target="_blank" rel="noopener" aria-label="View photo 6 full size">
+      <img src="photo6.png" alt="Rudra Prasad portrait 6" loading="lazy">
+    </a>
+  </div>
+</section>
+
 <section id="legacy">
   <h2>A Journey of Multiple Disciplines</h2>
   <div class="card">
@@ -620,38 +682,6 @@ footer {
     &copy; 2026 Rudra Prasad. All Rights Reserved.
   </p>
 </footer>
-
-<section id="gallery" style="padding:50px 20px;text-align:center;">
-  <h2>My Photo Gallery</h2>
-  <div class="photo-gallery">
-    <img src="photo1.jpg" alt="Rudra Prasad Photo 1">
-    <img src="photo2.png" alt="Rudra Prasad Photo 2">
-    <img src="photo3.png" alt="Rudra Prasad Photo 3">
-    <img src="photo4.png" alt="Rudra Prasad Photo 4">
-    <img src="photo5.png" alt="Rudra Prasad Photo 5">
-    <img src="photo6.png" alt="Rudra Prasad Photo 6">
-  </div>
-</section>
-
-<style>
-.photo-gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 20px;
-  max-width: 1100px;
-  margin: 30px auto;
-}
-.photo-gallery img {
-  width: 100%;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 14px;
-  transition: transform 0.3s;
-}
-.photo-gallery img:hover {
-  transform: scale(1.04);
-}
-</style>
 
 </body>
 </html>
