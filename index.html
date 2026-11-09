@@ -2,127 +2,624 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Rudra Prasad | Official Website</title>
-  <meta name="description" content="Official website of Rudra Prasad, hospitality engineering leader, Garhwali actor, filmmaker and humanitarian volunteer from Uttarakhand, India.">
+<title>Rudra Prasad | Hospitality Engineer, Garhwali Actor & Filmmaker</title>
 
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      background: #0c1424;
-      color: #f5f5f5;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-    }
-    header {
-      padding: 75px 20px;
-      text-align: center;
-      background: linear-gradient(135deg, #101c33, #263b56);
-    }
-    h1 { color: #e8c27a; font-size: 42px; }
-    h2 { color: #e8c27a; }
-    section {
-      max-width: 900px;
-      margin: auto;
-      padding: 35px 22px;
-      border-bottom: 1px solid #344052;
-    }
-    a { color: #e8c27a; }
-    .stat { font-size: 28px; color: #e8c27a; }
-    footer { text-align: center; padding: 30px; }
-  </style>
+<meta name="description" content="Official biography of Rudra Prasad, also known as Rakesh Rudra. Explore his hospitality engineering career, Garhwali acting and filmmaking, Devbhoomi Online Blood Bank, ASOZ and achievements.">
+
+<meta name="keywords" content="Rudra Prasad, Rakesh Rudra, Rakesh Pashwal, Bhagwati Prasad, Garhwali actor, Uttarakhand actor, hospitality engineer, Maldives engineering, Devbhoomi Online Blood Bank, ASOZ">
+
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://rudraprasad-official.github.io/">
+
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Rudra Prasad | Official Biography">
+<meta property="og:description" content="Hospitality Engineering, Garhwali Cinema, Filmmaking, Social Service and Achievements.">
+<meta property="og:url" content="https://rudraprasad-official.github.io/">
+
+<style>
+:root {
+  --bg: #091421;
+  --card: #132337;
+  --gold: #e8bd70;
+  --white: #f5f7fa;
+  --muted: #afbed0;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--white);
+  line-height: 1.8;
+}
+a { color: var(--gold); }
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #0b1828;
+  padding: 15px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  border-bottom: 1px solid #304053;
+}
+.logo {
+  color: var(--gold);
+  font-size: 20px;
+  font-weight: bold;
+}
+nav .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+nav a:hover { color: var(--gold); }
+.hero {
+  text-align: center;
+  padding: 105px 20px;
+  background: linear-gradient(135deg,#08111d,#183651,#091421);
+}
+.hero h1 {
+  font-size: clamp(40px,7vw,76px);
+  margin: 0;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+.hero h2 {
+  font-size: clamp(17px,3vw,24px);
+  font-weight: normal;
+}
+.hero p {
+  max-width: 750px;
+  margin: 20px auto;
+  color: var(--muted);
+}
+.button {
+  display: inline-block;
+  background: var(--gold);
+  color: #091421;
+  padding: 11px 24px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 8px;
+}
+section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 65px 22px;
+}
+h2 {
+  color: var(--gold);
+  font-size: 30px;
+  margin-bottom: 25px;
+}
+h3 { color: #f0d19a; }
+p { color: #dce5ef; }
+.card {
+  background: var(--card);
+  padding: 26px;
+  border: 1px solid #2c4055;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(260px,1fr));
+  gap: 20px;
+}
+.stat {
+  text-align: center;
+  background: #172b41;
+  padding: 24px;
+  border-radius: 10px;
+}
+.stat strong {
+  display: block;
+  color: var(--gold);
+  font-size: 30px;
+}
+.video {
+  background: var(--card);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #30445a;
+}
+.video img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  object-fit: cover;
+}
+.video .details { padding: 18px; }
+.video a { font-weight: bold; }
+.timeline {
+  border-left: 2px solid var(--gold);
+  padding-left: 25px;
+}
+.timeline article {
+  position: relative;
+  margin-bottom: 30px;
+}
+.timeline article:before {
+  content: "";
+  position: absolute;
+  left: -32px;
+  top: 9px;
+  width: 11px;
+  height: 11px;
+  background: var(--gold);
+  border-radius: 50%;
+}
+.small { color: var(--muted); font-size: 14px; }
+footer {
+  text-align: center;
+  background: #06101b;
+  padding: 35px 20px;
+  border-top: 1px solid #304053;
+}
+@media(max-width:600px) {
+  section { padding: 45px 18px; }
+  .hero { padding: 75px 18px; }
+  nav { justify-content: center; }
+  .logo { width: 100%; text-align: center; }
+}
+</style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Rudra Prasad",
+  "alternateName": [
+    "Rakesh Rudra",
+    "Rakesh Pashwal",
+    "Bhagwati Prasad",
+    "Rakesh"
+  ],
+  "url": "https://rudraprasad-official.github.io/",
+  "birthPlace": {
+    "@type": "Place",
+    "name": "Chamoli, Uttarakhand, India"
+  },
+  "nationality": "Indian",
+  "jobTitle": "Hospitality Engineering Professional",
+  "description": "Indian hospitality engineering professional, Garhwali actor, filmmaker and humanitarian from Uttarakhand.",
+  "knowsAbout": [
+    "Hospitality Engineering",
+    "Resort Operations",
+    "Garhwali Cinema",
+    "Film Direction",
+    "Choreography",
+    "Cinematography",
+    "Blood Donation Coordination"
+  ]
+}
+</script>
 </head>
 
 <body>
-  <header>
-    <h1>Rudra Prasad</h1>
-    <p>Hospitality Engineering Leader</p>
-    <p>Garhwali Actor | Director | Filmmaker</p>
-    <p>Humanitarian Volunteer</p>
-  </header>
 
-  <section>
-    <h2>About Me</h2>
+<nav>
+  <div class="logo">RUDRA PRASAD</div>
+  <div class="links">
+    <a href="#about">About</a>
+    <a href="#career">Career</a>
+    <a href="#films">Films</a>
+    <a href="#social">Social Work</a>
+    <a href="#achievements">Achievements</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>RUDRA PRASAD</h1>
+  <h2>Hospitality Engineering Professional | Garhwali Actor | Filmmaker</h2>
+  <p>
+    From the mountains of Uttarakhand to the luxury resorts
+    of the Maldives — a journey through engineering,
+    regional cinema, creativity and community service.
+  </p>
+  <a class="button" href="#about">Discover My Story</a>
+  <a class="button" href="#films">Explore Filmography</a>
+</header>
+
+<section>
+  <div class="grid">
+    <div class="stat">
+      <strong>2017</strong>
+      Engineering Career Started
+    </div>
+    <div class="stat">
+      <strong>280+</strong>
+      Blood Donation Cases Coordinated
+    </div>
+    <div class="stat">
+      <strong>5+</strong>
+      Garhwali Music Video Projects
+    </div>
+    <div class="stat">
+      <strong>2016</strong>
+      Cultural Recognition
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <h2>About Rudra Prasad</h2>
+  <div class="card">
     <p>
       Rudra Prasad is an Indian hospitality engineering
-      professional, Garhwali actor and filmmaker from
-      Chamoli, Uttarakhand, India.
+      professional, Garhwali actor, filmmaker and
+      humanitarian originating from Chamoli district
+      in Uttarakhand, India.
     </p>
     <p>
-      Previously officially known as Bhagwati Prasad,
-      he was known as Rakesh among his family.
-      He legally changed his name to Rudra Prasad
-      in 2026.
+      His professional journey spans hospitality
+      engineering, technical leadership, resort operations,
+      regional music videos and community service.
     </p>
-  </section>
+    <p>
+      Beginning his engineering career in July 2017,
+      he progressed through hospitality establishments
+      in India before moving into engineering leadership
+      roles in the Maldives.
+    </p>
+    <p>
+      Beyond engineering, he has participated in
+      Garhwali music videos as a lead actor and has
+      undertaken film direction, production,
+      choreography and cinematography.
+    </p>
+  </div>
 
-  <section>
-    <h2>Hospitality Engineering Career</h2>
+  <h3>Name and Identity</h3>
+  <div class="card">
     <p>
-      Beginning his professional career in July 2017,
-      Rudra has worked in engineering operations
-      across India and the Maldives.
+      Rudra Prasad was known as Rakesh among his family
+      and in his home community. His earlier official
+      name was Bhagwati Prasad.
     </p>
     <p>
-      His professional experience includes Lemon Tree
-      Hotels, Club Mahindra, Zone by The Park and
-      RAAYA by Atmosphere, Maldives.
+      During his involvement in Uttarakhand's regional
+      music industry, he appeared under the screen
+      name Rakesh Rudra. Some earlier records and
+      newspaper references also used Rakesh Pashwal.
     </p>
-  </section>
+    <p>
+      In 2026, he legally changed his official name
+      from Bhagwati Prasad to Rudra Prasad.
+      Rudra Prasad is his current official name.
+    </p>
+  </div>
+</section>
 
-  <section>
-    <h2>Garhwali Acting & Filmmaking</h2>
-    <p>
-      Rudra has performed in Garhwali music videos
-      under the screen names Rakesh Rudra and Rudra.
-    </p>
-    <ul>
-      <li>Louti Aounla Pahada — Solo Lead Actor</li>
-      <li>Meri Nilima — Lead Actor with Rajni</li>
-      <li>Chhoti Syali Ludra — Lead Actor with Shashi Madhwal</li>
-      <li>Hey Suwa (2021) — Lead Actor with Priyanka</li>
-      <li>Meri Dagdya (2023) — Director, Producer, Choreographer & DOP</li>
-    </ul>
-  </section>
+<section id="career">
+  <h2>Hospitality Engineering Career</h2>
+  <p>
+    Rudra Prasad has developed his engineering career
+    across Indian hospitality properties and luxury
+    resort operations in the Maldives.
+  </p>
 
-  <section>
-    <h2>Humanitarian Work</h2>
-    <h3>Devbhoomi Online Blood Bank</h3>
-    <p class="stat">280+ Patient Cases</p>
-    <p>
-      From 2015 to 2022, Rudra operated a nonprofit
-      online blood donor coordination initiative,
-      helping connect patients with voluntary donors
-      during medical emergencies.
-    </p>
-  </section>
+  <div class="timeline">
+    <article>
+      <h3>July 2017 — Career Beginning</h3>
+      <p>
+        Began his professional engineering career
+        after completing a Diploma in Electrical
+        Engineering in 2017.
+      </p>
+    </article>
 
-  <section>
-    <h2>Engineering & Manufacturing</h2>
-    <h3>ASOZ Ceiling Fans (2019–2020)</h3>
-    <p>
-      In 2019, Rudra established his own ceiling fan
-      brand, ASOZ, through Devbhoomi Electricals
-      in Gairsain, Uttarakhand, alongside his job.
-      Operations ended around 2020 due to
-      COVID-19 disruptions.
-    </p>
-  </section>
+    <article>
+      <h3>Engineering Career in India</h3>
+      <p>
+        Gained hospitality engineering experience
+        and leadership exposure across properties
+        including Lemon Tree Hotels, Club Mahindra
+        Corbett and Zone by The Park Gopalpur.
+      </p>
+    </article>
 
-  <section>
-    <h2>Cultural Recognition</h2>
-    <p>
-      Participated in a traditional folk dance
-      performance at the Krishi Udyan Evam Paryatan
-      Vikas Mela, Gairsain, in November 2016.
-    </p>
-  </section>
+    <article>
+      <h3>Engineering Career in the Maldives</h3>
+      <p>
+        Continued his career in international
+        hospitality engineering, including
+        experience associated with RAAYA by
+        Atmosphere and the Maldives resort sector.
+      </p>
+    </article>
 
-  <footer>
-    <p>© 2026 Rudra Prasad. All Rights Reserved.</p>
-  </footer>
+    <article>
+      <h3>Engineering Leadership</h3>
+      <p>
+        Served as Senior Assistant Manager —
+        Engineering at RAAYA by Atmosphere,
+        supporting engineering operations,
+        preventive maintenance, utilities,
+        sustainability initiatives, technical
+        projects and team management.
+      </p>
+    </article>
+  </div>
+
+  <div class="card">
+    <h3>Professional Expertise</h3>
+    <p>
+      Electrical power distribution, diesel
+      generators, HVAC and VRF systems, reverse
+      osmosis plants, wastewater treatment,
+      solar photovoltaic systems, fire and life
+      safety, preventive maintenance, energy
+      efficiency, technical procurement and
+      hospitality engineering operations.
+    </p>
+    <p>
+      His academic background includes a Diploma
+      in Electrical Engineering and a Bachelor
+      of Technology completed in 2024.
+    </p>
+  </div>
+</section>
+
+<section id="films">
+  <h2>Garhwali Music & Filmography</h2>
+  <p>
+    Rudra Prasad, professionally credited in earlier
+    regional productions as Rakesh Rudra, has
+    contributed to Garhwali music videos through
+    acting and behind-the-camera creative work.
+  </p>
+
+  <div class="grid">
+
+    <div class="video">
+      <img src="https://img.youtube.com/vi/L5ffDqyC6KI/hqdefault.jpg"
+           alt="Garhwali music video project"
+           loading="lazy">
+      <div class="details">
+        <h3>Garhwali Music Video Project</h3>
+        <p>
+          Direction, production, choreography
+          and cinematography.
+        </p>
+        <a href="https://youtu.be/L5ffDqyC6KI"
+           target="_blank" rel="noopener noreferrer">
+          Watch Video
+        </a>
+      </div>
+    </div>
+
+    <div class="video">
+      <img src="https://img.youtube.com/vi/aTfBx7Kj0aA/hqdefault.jpg"
+           alt="Garhwali music video lead performance"
+           loading="lazy">
+      <div class="details">
+        <h3>Garhwali Lead Acting Project</h3>
+        <p>Lead acting performance by Rakesh Rudra.</p>
+        <a href="https://youtu.be/aTfBx7Kj0aA"
+           target="_blank" rel="noopener noreferrer">
+          Watch Video
+        </a>
+      </div>
+    </div>
+
+    <div class="video">
+      <img src="https://img.youtube.com/vi/L4saRNsKrFg/hqdefault.jpg"
+           alt="Garhwali regional music video"
+           loading="lazy">
+      <div class="details">
+        <h3>Regional Music Video</h3>
+        <p>Lead acting performance.</p>
+        <a href="https://youtu.be/L4saRNsKrFg"
+           target="_blank" rel="noopener noreferrer">
+          Watch Video
+        </a>
+      </div>
+    </div>
+
+    <div class="video">
+      <img src="https://img.youtube.com/vi/k4lWTAVvS7E/hqdefault.jpg"
+           alt="Rakesh Rudra acting project"
+           loading="lazy">
+      <div class="details">
+        <h3>Garhwali Acting Project</h3>
+        <p>Lead acting performance.</p>
+        <a href="https://youtu.be/k4lWTAVvS7E"
+           target="_blank" rel="noopener noreferrer">
+          Watch Video
+        </a>
+      </div>
+    </div>
+
+    <div class="video">
+      <img src="https://img.youtube.com/vi/vb9qB3jO1gg/hqdefault.jpg"
+           alt="Garhwali music video featuring Rudra"
+           loading="lazy">
+      <div class="details">
+        <h3>Garhwali Music Video</h3>
+        <p>Lead acting performance.</p>
+        <a href="https://youtu.be/vb9qB3jO1gg"
+           target="_blank" rel="noopener noreferrer">
+          Watch Video
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <h3>Selected Productions</h3>
+
+  <div class="card">
+    <h3>Louti Aounla Pahada</h3>
+    <p>
+      An early music video dedicated to Indian Army
+      soldiers. Rudra performed the solo acting role
+      under the screen name Rakesh Rudra.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Chhoti Syali Ludra</h3>
+    <p>
+      Featured as a lead actor alongside
+      Shashi Madhwal, credited as Rakesh Rudra.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Meri Nilima</h3>
+    <p>
+      Appeared in a lead acting role alongside
+      Rajni, under the screen name Rakesh Rudra.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Hey Suwa</h3>
+    <p>
+      Featured in the Garhwali music video
+      associated with singers Arvind Baba
+      and Meena Rana, credited as Rakesh Rudra.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>Meri Dagdya — 2023</h3>
+    <p>
+      Undertook direction, choreography,
+      cinematography and production responsibilities,
+      credited professionally as Rudra.
+    </p>
+  </div>
+</section>
+
+<section id="social">
+  <h2>Humanitarian & Social Work</h2>
+
+  <div class="card">
+    <h3>Devbhoomi Online Blood Bank | 2015–2022</h3>
+    <p>
+      From 2015 to 2022, Rudra Prasad operated
+      Devbhoomi Online Blood Bank, a nonprofit
+      volunteer initiative focused on connecting
+      patients with willing blood donors.
+    </p>
+    <p>
+      Through a volunteer network and telephone
+      coordination, the initiative helped arrange
+      blood donation support for more than 280
+      cases during its years of operation.
+    </p>
+    <p>
+      The initiative was covered in regional
+      newspaper reporting, where his earlier
+      name Rakesh Pashwal appeared.
+    </p>
+    <p>
+      The service operated as a donor coordination
+      network rather than a physical blood
+      storage facility.
+    </p>
+    <a href="https://www.facebook.com/share/1DDuyYpU4E/"
+       target="_blank" rel="noopener noreferrer">
+       View Facebook Reference
+    </a>
+  </div>
+</section>
+
+<section id="achievements">
+  <h2>Achievements & Recognition</h2>
+
+  <div class="card">
+    <h3>2016 — Agriculture, Horticulture & Tourism Development Fair</h3>
+    <p>
+      Received recognition for participation
+      in the 2016 Agriculture, Horticulture
+      and Tourism Development Fair held in
+      the Gairsain development block of
+      Chamoli, Uttarakhand.
+    </p>
+    <p>
+      The certificate records a cultural
+      programme performance and was issued
+      under the name Rakesh Pashwal.
+    </p>
+  </div>
+
+  <div class="card">
+    <h3>2019 — ASOZ Ceiling Fan Brand</h3>
+    <p>
+      In 2019, alongside his regular engineering
+      employment, Rudra established a ceiling
+      fan manufacturing venture in Gairsain,
+      Chamoli, under the brand name ASOZ,
+      associated with Devbhoomi Electricals.
+    </p>
+    <p>
+      The venture represented his practical
+      interest in electrical product manufacturing
+      and local industrial development.
+    </p>
+    <p>
+      Operations were discontinued approximately
+      one year later due to the disruption
+      associated with the COVID-19 pandemic.
+    </p>
+  </div>
+</section>
+
+<section id="legacy">
+  <h2>A Journey of Multiple Disciplines</h2>
+  <div class="card">
+    <p>
+      Rudra Prasad's journey reflects a combination
+      of technical expertise, artistic expression
+      and community engagement.
+    </p>
+    <p>
+      His professional identity connects
+      hospitality engineering leadership with
+      his creative contributions to Uttarakhand's
+      regional music industry and his years
+      coordinating voluntary blood donation.
+    </p>
+    <p>
+      From his early years in Chamoli to
+      engineering responsibilities in the
+      Maldives, his career illustrates
+      an ongoing commitment to learning,
+      professional development and creative work.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <h3>RUDRA PRASAD</h3>
+  <p>
+    Hospitality Engineering | Garhwali Cinema |
+    Filmmaking | Humanitarian Service
+  </p>
+  <p class="small">
+    Official Personal Website
+  </p>
+  <p class="small">
+    &copy; 2026 Rudra Prasad. All Rights Reserved.
+  </p>
+</footer>
+
 </body>
 </html>
