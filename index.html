@@ -621,5 +621,37 @@ footer {
   </p>
 </footer>
 
+<section id="gallery" style="padding:50px 20px;text-align:center;">
+  <h2>My Photo Gallery</h2>
+  <div class="photo-gallery">
+    <img src="photo1.jpg" alt="Rudra Prasad Photo 1">
+    <img src="photo2.png" alt="Rudra Prasad Photo 2">
+    <img src="photo3.png" alt="Rudra Prasad Photo 3">
+    <img src="photo4.png" alt="Rudra Prasad Photo 4">
+    <img src="photo5.png" alt="Rudra Prasad Photo 5">
+    <img src="photo6.png" alt="Rudra Prasad Photo 6">
+  </div>
+</section>
+
+<style>
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 30px auto;
+}
+.photo-gallery img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 14px;
+  transition: transform 0.3s;
+}
+.photo-gallery img:hover {
+  transform: scale(1.04);
+}
+</style>
+
 </body>
 </html>
